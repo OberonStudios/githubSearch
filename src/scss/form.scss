@@ -1,0 +1,35 @@
+
+input[type="text"] {
+    border: .3em solid white;
+    border-radius: 5px;
+    background: $primary-color-dark-2;
+    color: $primary-color-text-light-1;
+    font-size: 1em;
+    font-weight: bold;
+    width: 25%;
+    padding: 1rem;
+    outline: none;
+
+    &:focus{
+        border: .3em solid $primary-color-1;
+        transition: all 1.5s;
+    }
+}
+
+.submitButton {
+    color: $primary-color-text-light-1;
+    cursor: pointer;
+    margin-left: -3.5rem;
+    height: 1.6rem;
+    background: none;
+    border: none;
+    outline: none;
+
+    &:active{
+        transform: scale(1.5);
+    }
+
+    &:hover{
+        color: $primary-color-1;
+    }
+}

@@ -1,0 +1,15 @@
+
+$primary-color-dark-1: rgb(24, 23, 27);
+$primary-color-dark-2: rgb(44, 44, 53);
+
+$primary-color-1: rgb(224, 109, 81);
+$primary-color-2: rgb(228, 35, 35);
+$primary-color-3: linear-gradient(to right, $primary-color-1, $primary-color-2);
+
+$primary-color-text-light-1:  rgb(170, 170, 170);
+
+html,body{
+    background: $primary-color-dark-1;
+}
+
+@import "form.scss";
