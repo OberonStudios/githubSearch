@@ -5,8 +5,9 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 class Form extends Component {
-    onSubmit = (text) => {
-        console.log(text);
+    onSubmit = (user) => {
+        console.log(user);
+        this.props.fetchGithubUser(user);
     }
 
     render() {
@@ -21,7 +22,7 @@ class Form extends Component {
                         placeholder="Search Github User"
                     />
                     <button type="submit" className="submitButton">
-                        <i class="fas fa-search"></i>
+                        <i className="fas fa-search"></i>
                     </button>
 
             </form>
