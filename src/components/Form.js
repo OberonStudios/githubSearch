@@ -6,7 +6,6 @@ import * as actions from '../actions';
 
 class Form extends Component {
     onSubmit = (user) => {
-        console.log(user);
         this.props.fetchGithubUser(user);
     }
 
