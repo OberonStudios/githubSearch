@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import UserInfo from './UserInfo';
 
 class UserCard extends Component {
     getBasicUserInfo(){
@@ -7,8 +8,9 @@ class UserCard extends Component {
         if(user && user.data !== "Could not find"){
             return(
                 <div>
-                    <h1>{user.name}</h1>
-                    <p>Currently has {user.public_repos}</p>
+                    <UserInfo
+                        user={user}
+                    />
                 </div>
             )
         }
