@@ -5,10 +5,10 @@ class UserInfo extends Component {
         const user = this.props.user;
         return (
             <div className="user__header">
-                <div>
+                <div className="user__header--image">
                     <img src={user.avatar_url} alt="avatar"/>
                 </div>
-                <div>
+                <div className="user__header--text">
                     <h1>{user.name}</h1>
                     <p>Currently has {user.public_repos} public repositories.</p>
                     {

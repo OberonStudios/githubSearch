@@ -2,5 +2,27 @@
 
     &__header{
         display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem;
+
+        &--image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+
+            img{
+                width: 25vh;
+                border-radius: 1rem;
+            }
+        }
+
+        &--text{
+            color: white;
+            font-weight: bold;
+            padding: 2rem;
+        }
     }
 }

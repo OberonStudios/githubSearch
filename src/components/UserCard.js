@@ -7,11 +7,9 @@ class UserCard extends Component {
         const user = this.props.userData;
         if(user && user.data !== "Could not find"){
             return(
-                <div>
                     <UserInfo
                         user={user}
                     />
-                </div>
             )
         }
         else{
