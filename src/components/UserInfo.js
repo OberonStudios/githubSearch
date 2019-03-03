@@ -7,7 +7,7 @@ class UserInfo extends Component {
             <div className="user__header">
                 <div className="user__header--postition">
                     <div className="user__header--image">
-                        <img src={user.avatar_url} alt="avatar"/>
+                        <img src={user.avatar_url} alt="avatar" />
                     </div>
                     <div className="user__header--text">
                         <h1>{user.name}</h1>
@@ -15,10 +15,8 @@ class UserInfo extends Component {
                         {
                             user.location ? <p>Resides in {user.location}</p> : ""
                         }
-                        <div>
-                            <p>Followers: {user.followers}</p>
-                            <p>Following: {user.following}</p>
-                        </div>
+                        <p>Followers: {user.followers}</p>
+                        <p>Following: {user.following}</p>
                         <p>Created account on {user.created_at.substr(0, 10)}</p>
                         <p>Visit user's github page by clicking <a href={user.html_url}>here</a></p>
                     </div>
