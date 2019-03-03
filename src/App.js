@@ -6,7 +6,7 @@ import './scss/main.scss';
 class App extends Component {
   render() {
     return (
-      <div className="items">
+      <div>
         <BrowserRouter>
           <div>
             <Route exact path='/' component={LandingPage} />

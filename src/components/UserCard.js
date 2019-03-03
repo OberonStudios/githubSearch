@@ -23,9 +23,7 @@ class UserCard extends Component {
     }
     render() {
         return (
-            <div>
-                {this.getBasicUserInfo()}
-            </div>
+                this.getBasicUserInfo()
         );
     }
 }

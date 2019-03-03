@@ -6,7 +6,7 @@ import UserCard from './UserCard';
 class LandingPage extends Component {
     render() {
         return (
-            <div>
+            <div className="user">
                 <Form/>
                 {
                     this.props.userData.login ? <UserCard/> : ""
