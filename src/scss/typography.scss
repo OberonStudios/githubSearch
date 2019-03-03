@@ -1,0 +1,7 @@
+.textPrimary{
+    text-decoration: none;
+    font-family: cursive;
+    background: linear-gradient(to right top, $primary-color-3, $primary-color-2, $primary-color-1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

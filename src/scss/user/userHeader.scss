@@ -1,0 +1,47 @@
+.user__header{
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0;
+
+    &--postition{
+        background: white;
+        display: flex;
+        border-radius: 1rem;
+
+        @media only screen and (max-width: 550px) {
+            flex-direction: column;
+        }
+    }
+
+    &--image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+
+        img{
+            width: 25vh;
+            border-radius: 1rem;
+        }
+
+        @media only screen and (max-width: 550px) {
+            padding: 1rem;
+        }
+    }
+
+    &--text{
+        color: $primary-color-dark-1;
+        font-weight: bold;
+        padding: 2rem;
+
+        @media only screen and (max-width: 550px) {
+            padding: .5rem;
+            text-align: center;
+            font-size: 85%;
+
+            & > *{
+                margin: .5em;
+            }
+        }
+    }
+}

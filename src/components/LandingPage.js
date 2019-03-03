@@ -9,6 +9,7 @@ class LandingPage extends Component {
             <div className="user">
                 <Form/>
                 {
+                    //every user has a login property, so if user has one, it means user exists, otherwise, user not found
                     this.props.userData.login ? <UserCard/> : ""
                 }
 

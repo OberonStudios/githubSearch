@@ -5,19 +5,12 @@ import UserInfo from './UserInfo';
 class UserCard extends Component {
     getBasicUserInfo(){
         const user = this.props.userData;
-        if(user && user.data !== "Could not find"){
+        if(user){
+            console.log("FOUND")
             return(
                     <UserInfo
                         user={user}
                     />
-            )
-        }
-        else{
-            console.log("COULD NOT FIND");
-            return(
-                <div>
-                    <h1>Could not find user</h1>
-                </div>
             )
         }
     }
