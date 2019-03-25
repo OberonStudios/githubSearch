@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import UserInfo from './UserInfo';
+import FollowersList from './FollowersList';
 
 class UserCard extends Component {
     getBasicUserInfo(){
@@ -8,9 +9,13 @@ class UserCard extends Component {
         if(user){
             console.log("FOUND")
             return(
+                <>
                     <UserInfo
                         user={user}
                     />
+                    <FollowersList
+                    />
+                </>
             )
         }
     }
