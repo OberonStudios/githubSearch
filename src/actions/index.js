@@ -1,4 +1,4 @@
-import { USER_DATA, USER_REPO } from './types';
+import { USER_DATA, USER_FOLLOWERS } from './types';
 import axios from 'axios';
 
 export const fetchGithubUser = (user) => async (dispatch) => {
@@ -8,12 +8,12 @@ export const fetchGithubUser = (user) => async (dispatch) => {
         const url = `https://api.github.com/users/${userName}`;
         const res = await axios.get(url);
 
-        const repoURL = `https://api.github.com/users/${userName}/repos`;
-        const repoRes = await axios.get(repoURL);
+        const followersURL = `https://api.github.com/users/${userName}/followers`;
+        const followersRes = await axios.get(followersURL);
 
         //console.log(res.data);
         dispatch({type: USER_DATA, payload: res.data});
-        dispatch({type: USER_REPO, payload: repoRes.data });
+        dispatch({type: USER_FOLLOWERS, payload: followersRes.data });
     }
     catch(err){
         console.log("Could not find user", userName);

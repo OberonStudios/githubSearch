@@ -6,6 +6,7 @@ import FollowersList from './FollowersList';
 class UserCard extends Component {
     getBasicUserInfo(){
         const user = this.props.userData;
+        const followers = this.props.followers;
         if(user){
             console.log("FOUND")
             return(
@@ -14,6 +15,7 @@ class UserCard extends Component {
                         user={user}
                     />
                     <FollowersList
+                        followers={followers}
                     />
                 </>
             )
@@ -29,6 +31,7 @@ class UserCard extends Component {
 function mapStateToProps(state){
     return {
         userData: state.userData,
+        followers: state.followersData,
         form: state.form
     }
 }
